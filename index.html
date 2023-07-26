@@ -10,7 +10,7 @@
 <body>
     <header>
        <div class="container lg:w-[70rem] justify-center m-auto mt-12">
-        <nav class="flex items-center justify-between px-4 py-3 pr-[30px] pl-[30px] bg-[#F85559] rounded-[33px]">
+        <nav class="flex items-center justify-between px-4 py-3 pr-[30px] pl-[30px] lg:bg-[#F85559] rounded-[33px]">
             <!-- Left Side: Menu (Visible on larger devices) -->
             <ul class="hidden md:flex space-x-4">
               <li><a href="#" class="text-white">Home</a></li>
@@ -27,7 +27,7 @@
               <div class="md:hidden">
                 <!-- Menu Icon for Small Devices -->
                 <button class="text-white">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                   </svg>
                 </button>
@@ -38,14 +38,41 @@
               </div>
             </div>
         </nav>
-    </div>
-
-    
-
-    
-          
-      
-          
+    </div>   
     </header>
+    <main>
+      <div class="container lg:w-[70rem] justify-center m-auto mt-12">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="images/banner1.png" class="" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="images/banner2.png" class="" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="images/banner3.png" class="" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="images/banner4.png" class="" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 </body>
 </html>
